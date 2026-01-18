@@ -35,5 +35,7 @@ int main(){
         cout<<srr[i]<<" ";
     }
 
+    //sizeof(string) is typically 24 bytes in C++, 
+    //and it does not depend on the length of the string.
     cout<<endl<<sizeof(srr)<<" "<<sizeof(srr[0])<<" "<<sizeof(srr)/sizeof(srr[0]);
 }
