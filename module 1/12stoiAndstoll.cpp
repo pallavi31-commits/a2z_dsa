@@ -8,6 +8,6 @@ int main(){
 
     // stoll : string to long long
     string r = "1234567891932";
-    long long x= stoll(r);
+    long long x = stoll(r);
     cout<<x+1;
 }
