@@ -4,14 +4,20 @@ using namespace std;
 class Solution{	
 	public:
 		bool isSorted(vector<int>& nums){
-            vector<int>ans;
-            ans = nums;
-            sort(ans.begin(),ans.end());
-            if(ans==nums){
-                return true;
-            }else{
-                return false;
+            // vector<int>ans;
+            // ans = nums;
+            // sort(ans.begin(),ans.end());
+            // if(ans==nums){
+            //     return true;
+            // }else{
+            //     return false;
+            // }
+            for(int i=0;i<nums.size()-1;i++){
+                if(nums[i]>nums[i+1]){
+                    return false;
+                }
             }
+            return true;
 		}
 };
 
